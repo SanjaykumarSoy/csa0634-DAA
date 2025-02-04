@@ -1,0 +1,10 @@
+def first_palindrome(strings):
+    for s in strings:
+        if s == s[::-1]:
+            return s
+    return None
+
+
+arr = ["hello", "world", "racecar", "python"]
+result = first_palindrome(arr)
+print(result)  
