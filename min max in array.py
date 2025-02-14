@@ -1,8 +1,10 @@
-def find_max_min(arr):
-    max_value = max(arr)
-    min_value = min(arr)
-    return max_value, min_value
-array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-maximum, minimum = find_max_min(array)
-print("Maximum value:", maximum)
-print("Minimum value:", minimum)
+def getMinMax(arr):
+    arr.sort()
+    minmax = {"min": arr[0], "max": arr[-1]}
+    return minmax
+
+arr = [1000, 11, 445, 1, 330, 3000]
+minmax = getMinMax(arr)
+
+print("Minimum element is", minmax["min"])
+print("Maximum element is", minmax["max"])
